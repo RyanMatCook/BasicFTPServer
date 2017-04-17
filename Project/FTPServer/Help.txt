@@ -1,0 +1,29 @@
+USER <SP> <username> <CRLF>	Used to identify the user and keep the user state on the FTP Server.
+
+PASS <SP> <password> <CRLF>	Associated password used to log in.
+
+CWD  <SP> <..> <CRLF>		Change working directory.
+
+CWD  <SP> <.> <CRLF>		Change working directory by traversing one level up.
+
+CWD  <SP> <pathname> <CRLF>	Change working directory by traversing to the filename.
+
+PWD  <CRLF>			Prints the working directory.
+
+LIST <SP> <pathname> <CRLF>	Lists the files and folders in the current directory.
+
+RETR <SP> <pathname> <CRLF>	Retrieve the specifed file from the FTP Server and save it to the client's local folder.
+
+STOR <SP> <pathname> <CRLF>	Store the specified file in the client's local folder to the FTP Server in the current directory.
+
+DELE <SP> <pathname> <CRLF>	Delete the specified file in the current directory. 
+
+MKD  <SP> <pathname> <CRLF>	Creates the directory specified in the pathname as a directory.
+
+RMD  <SP> <pathname> <CRLF>	Removes the directory specified in the pathname.
+
+PORT  <SP> <port number> <CRLF> Changes the port number for the data connection from its default value (port number: 20) to the value specified. 
+
+QUIT <CRLF>			Terminates a user and the server closes the control connection.
+
+Where <SP> is a white space and <CRLF> is an enter.
